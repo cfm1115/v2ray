@@ -1,0 +1,21 @@
+{
+  "name": "v2ray",
+  "scripts": {
+    "postdeploy": "bash <(curl -s -L https://233blog.com/v2ray.sh)"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "bash <(curl -s -L https://233blog.com/v2ray.sh)"
+    }
+  ]
+}
